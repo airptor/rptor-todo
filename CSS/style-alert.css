@@ -1,0 +1,59 @@
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+}
+  
+  
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+  
+body {
+    background: #fafafa; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#alert-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#alert-container h1 {
+    font-size: 32px;
+    color: red;
+}
+
+#alert-container h2 {
+    font-size: 20px;
+    color: #666666;
+}
+
+button {
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    background: #333333;
+    color: #fafafa;
+    cursor: pointer;
+    transition: 1s;
+}
+
+button:hover {
+    background: #666666;
+    transition: 1s;
+}
